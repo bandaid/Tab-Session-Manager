@@ -1,0 +1,46 @@
+#tsm-suspended-actions {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-block: 1rem;
+  max-width: 100%;
+}
+#tsm-suspended-destination {
+  color: inherit;
+  opacity: 0.85;
+  overflow-wrap: anywhere;
+  font: 500 0.9rem/1.5 system-ui, sans-serif;
+  margin: 0;
+}
+#tsm-suspended-open {
+  appearance: none;
+  background: #1664c3;
+  color: #fff;
+  border: 1px solid #0954ad;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.15rem;
+  font: 600 1rem/1.4 system-ui, sans-serif;
+  cursor: pointer;
+  min-height: 2.75rem;
+}
+#tsm-suspended-open:hover { background: #104c96; }
+#tsm-suspended-open:focus-visible { outline: 3px solid #d97706; outline-offset: 3px; }
+#tsm-suspended-open:disabled { opacity: 0.65; cursor: progress; }
+#tsm-suspended-feedback { color: inherit; margin: 0; font: 0.9rem/1.5 system-ui, sans-serif; }
+.dark-theme #tsm-suspended-open {
+  background: #a9cbfb;
+  border-color: #d1e3ff;
+  color: #071b34;
+}
+.dark-theme #tsm-suspended-open:hover { background: #d1e3ff; }
+.dark-theme #tsm-suspended-open:focus-visible { outline-color: #ffd36e; }
+@media (prefers-color-scheme: dark) {
+  .system-theme #tsm-suspended-open {
+    background: #a9cbfb;
+    border-color: #d1e3ff;
+    color: #071b34;
+  }
+  .system-theme #tsm-suspended-open:hover { background: #d1e3ff; }
+  .system-theme #tsm-suspended-open:focus-visible { outline-color: #ffd36e; }
+}
